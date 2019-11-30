@@ -11,16 +11,25 @@
 
 ---
 
-<pre>
+
 ``` 
-	This is a normal paragraph: 
-	This is a code block. 
-		첫번째 들여쓰기
-			두번째 들여쓰기
-		end code block. 
+This is a normal paragraph: 
+This is a code block. 
+	첫번째 들여쓰기
+		두번째 들여쓰기
+	end code block. 
 
 ```
-		
-</pre>
+
+
+```javascript
+const foo = 1;
+let bar = foo;
+
+bar = 9;
+
+console.log(foo, bar); // => 1, 9
+```
+
 
 
