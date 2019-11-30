@@ -33,10 +33,10 @@ Javascript 에서 변수는 ES5 키워드 `var`, ES6의 키워드 `const`, `let`
 
 ```javascript
 if(true) {
-	var hi_1 = 'hello'; // bad
+  var hi_1 = 'hello'; // bad
 }
 if(true){
-	let hi_2 = 'hello'; // good
+  let hi_2 = 'hello'; // good
 }
 console.log(hi_1); // => 'hello';
 console.log(hi_2) // "ReferenceError: hi_2 is not defined
@@ -59,7 +59,7 @@ airbnb Javascript Style Guide에서는 객체를 생성할 때 객체 리터럴 
 const arr = [1,2,3];
 const obj = {};
 const plus = function(a, b){
-	return a + b
+  return a + b
 }
 
 ```
