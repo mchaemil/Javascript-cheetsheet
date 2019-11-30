@@ -12,7 +12,15 @@
 ---
 
 <pre>
-``` This is a normal paragraph: This is a code block. end code block. ```
+``` 
+	This is a normal paragraph: 
+	This is a code block. 
+		첫번째 들여쓰기
+			두번째 들여쓰기
+		end code block. 
+
+```
+		
 </pre>
 
 
