@@ -31,17 +31,30 @@ console.log(num, str); // => 1 'hello world';
 ```
 Javascript 에서 변수는 ES5 키워드 `var`, ES6의 키워드 `const`, `let` 을 통해서 선언할 수 있는데, 변수의 누수현상(블록 범위를 지나도 변수가 살아있는)을 방지하기 위해서는 ES6의 키워드를 사용하는 것이 권장된다.
 
-글쓴이는 이제 더 이상 `var`를 사용하지 않는다. 이를 통해 **1.변수의 유효범위를 생각하며** 코드를 작성하게 되었고, `const` 사용을 통해 **2.변수의 오염 가능성을 방지**할 수 있었다. 
-
 ```javascript
-var badNum = 1;
-const str = 'hello world';
+if(true) {
+	var hi_1 = 'hello'; // bad
+}
+if(true){
+	let hi_2 = 'hello'; // good
+}
+console.log(hi_1); // => 'hello';
+console.log(hi_2) // "ReferenceError: hi_2 is not defined
 
-let isFlag = false;
 ```
 
+글쓴이는 이제 더 이상 `var`를 사용하지 않는다. 이를 통해 **1.변수의 유효범위를 생각하며** 코드를 작성하게 되었고, `const` 사용을 통해 **2.변수의 오염 가능성을 방지**할 수 있게 됐다. 
 
-`var` 대신 `const`, `let` 을 사용하고,  
+
+
+Javascript 에서 참조값을 변수에 담을 때 객체 리터럴 
+
+Javascript는 원시 타입을 빼고 모든 값이 Object 이며, 객체 리터럴과 생성자로 생성할 수 있다. 
+- `Object`, `Function`, `Array`, `Date`, `등...`
+
+airbnb Javascript Style Guide에서는 객체를 생성할 때 객체 리터럴 방식을 채택한다. 
+> (Use the literal syntax for object creation) 
+글쓴이도 이를 따라서 객체를 생성할 때 리터럴(Use the literal) 방식을 채택하려 한다. 그 이유로는 리터럴로 정의한 객체는 끌어올리지 않기 때문이다. 
 
 ```javascript
 const arr = [1,2,3];
@@ -51,7 +64,6 @@ const obj = {};
 
 모두 객체 리터럴 형식으로 작성합니다. 
 - `Number`, `String`, `Boolean`, `Symbol`
-- `Object`, `Function`, `Array`, `Date`
 
 
 
