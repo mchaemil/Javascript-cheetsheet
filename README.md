@@ -23,7 +23,7 @@
 ## Variable
 프로그래밍을 잘 하기 위해서는 값을 다루는 능력이 중요하다. 이를 위해 변수를 사용하여 값(데이터)에 이름을 붙이고, 그 이름을 통해서 값을 읽거나 사용할 수 있다. 
 
-동적타입 언어인 Javascript는 프로그램을 실행할 때 혹시 모를 타입 변환에 주의하여야 한다. 
+Javascript는 두 가지의 데이터 타입이 존재하는데, Primitive와 Object가 그 주인공이다. Javascript는 실행할 때 변수에 저장된 데이터 타입이 다른 타입으로 변경될 수 있으므로 프로그램을 실행할 때 혹시 모를 타입 변환에 주의해야 한다. 
 ```javascript
 var num = 1;
 const str = 'hello world';
@@ -52,7 +52,8 @@ Javascript는 primitive type을 빼고 모든 값이 Object type이며, 객체 �
 - Object:  `Object`, `Function`, `Array`, `Date`, `등...`
 
 airbnb Javascript Style Guide에서는 객체를 생성할 때 객체 리터럴 방식을 채택한다. 
-> (Use the literal syntax for object creation)   
+> (Use the literal syntax for object creation)  
+
 글쓴이도 이를 따라서 객체를 생성할 때 리터럴(Use the literal) 방식을 채택하려 한다. 그 이유로는 리터럴로 정의한 객체는 끌어올리지 않기 때문이다. (not hoisting)
 
 ```javascript
@@ -64,7 +65,7 @@ const plus = function(a, b){
 
 ```
 
-모두 객체 리터럴 형식으로 작성합니다. 
+모두 객체 리터럴 형식으로 작성한다. 
 
 
 
