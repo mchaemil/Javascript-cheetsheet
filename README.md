@@ -21,24 +21,32 @@
 ---
 
 ## Variable
+프로그래밍을 잘 하기 위해선 값을 잘 다루는 능력이 중요하다. 값을 다루기 위해 변수를 사용하며, 이를 통해 값(데이터)에 이름을 붙일 수 있고, 그 이름을 통해서 값을 가리키게 할 수 있다.  
 
-- `string`
-- `number`
-- `boolean`
-- `null`
-- `undefined`
-- `symbol`
-- `array`
-- `object`
+
+- `Number`, `String`, `Boolean`, `Symbol`
+- `Object`, `Function`, `Array`, `Date`
 
 ```javascript
-const foo = 1;
-let bar = foo;
+var badNum = 1;
 
-bar = 9;
+const str = 'hello world';
 
-console.log(foo, bar); // => 1, 9
+let isFlag = false;
 ```
 
+`var` 대신 `const`, `let` 을 사용하고,  
+
+```javascript
+const arr = [1,2,3];
+const obj = {};
+
+```
+
+모두 객체 리터럴 형식으로 작성합니다. 
 
 
+
+
+- `null`
+- `undefined`
