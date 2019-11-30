@@ -9,18 +9,27 @@
 :ballot_box_with_check: 1.   
 :white_check_mark: 2. 
 
+## Table of Contents
+
+  1. [Variable](#variable)
+  1. [References](#references)
+  1. [Objects](#objects)
+  1. [Arrays](#arrays)
+  1. [Destructuring](#destructuring)
+
+
 ---
 
+## Variable
 
-``` 
-This is a normal paragraph: 
-This is a code block. 
-	첫번째 들여쓰기
-		두번째 들여쓰기
-	end code block. 
-
-```
-
+- `string`
+- `number`
+- `boolean`
+- `null`
+- `undefined`
+- `symbol`
+- `array`
+- `object`
 
 ```javascript
 const foo = 1;
