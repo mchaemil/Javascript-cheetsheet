@@ -47,25 +47,26 @@ console.log(hi_2) // "ReferenceError: hi_2 is not defined
 
 
 
-Javascript 에서 참조값을 변수에 담을 때 객체 리터럴 
-
-Javascript는 원시 타입을 빼고 모든 값이 Object 이며, 객체 리터럴과 생성자로 생성할 수 있다. 
-- `Object`, `Function`, `Array`, `Date`, `등...`
+Javascript는 primitive type을 빼고 모든 값이 Object type이며, 객체 리터럴과 생성자로 생성할 수 있다.  
+- Primitive: `Number`, `String`, `Boolean`, `null`, `undefined`
+- Object:  `Object`, `Function`, `Array`, `Date`, `등...`
 
 airbnb Javascript Style Guide에서는 객체를 생성할 때 객체 리터럴 방식을 채택한다. 
-> (Use the literal syntax for object creation) 
-글쓴이도 이를 따라서 객체를 생성할 때 리터럴(Use the literal) 방식을 채택하려 한다. 그 이유로는 리터럴로 정의한 객체는 끌어올리지 않기 때문이다. 
+> (Use the literal syntax for object creation)   
+글쓴이도 이를 따라서 객체를 생성할 때 리터럴(Use the literal) 방식을 채택하려 한다. 그 이유로는 리터럴로 정의한 객체는 끌어올리지 않기 때문이다. (not hoisting)
 
 ```javascript
 const arr = [1,2,3];
 const obj = {};
+const plus = function(a, b){
+	return a + b
+}
 
 ```
 
 모두 객체 리터럴 형식으로 작성합니다. 
-- `Number`, `String`, `Boolean`, `Symbol`
 
 
 
-- `null`
-- `undefined`
+- `null` : 프로그래머가 저장하는 값
+- `undefined` : 컴퓨터가 던지는 값
