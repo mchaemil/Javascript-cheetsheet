@@ -9,3 +9,10 @@
 :ballot_box_with_check: 1.   
 :white_check_mark: 2. 
 
+---
+
+<pre>
+``` This is a normal paragraph: This is a code block. end code block. ```
+</pre>
+
+
