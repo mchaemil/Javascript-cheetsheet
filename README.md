@@ -22,13 +22,14 @@
 
 ## Variable
 프로그래밍을 잘 하기 위해서는 값을 다루는 능력이 중요하다. 이를 위해 변수를 사용하여 값(데이터)에 이름을 붙이고, 그 이름을 통해서 값을 읽거나 사용할 수 있다. 
-
-Javascript는 두 가지의 데이터 타입이 존재하는데, Primitive와 Object가 그 주인공이다. Javascript는 실행할 때 변수에 저장된 데이터 타입이 다른 타입으로 변경될 수 있으므로 프로그램을 실행할 때 혹시 모를 타입 변환에 주의해야 한다. 
 ```javascript
 var num = 1;
 const str = 'hello world';
-console.log(num, str); // => 1 'hello world';
 ```
+Javascript는 두 가지의 데이터 타입이 존재하는데, Primitive와 Object가 그 주인공이다. Javascript는 실행할 때 변수에 저장된 데이터 타입이 다른 타입으로 변경될 수 있으므로 프로그램을 실행할 때 혹시 모를 타입 변환에 주의해야 한다. 
+- Primitive: `Number`, `String`, `Boolean`, `null`, `undefined`
+- Object:  `Object`, `Function`, `Array`, `Date`, `등...`
+
 Javascript 에서 변수는 ES5 키워드 `var`, ES6의 키워드 `const`, `let` 을 통해서 선언할 수 있는데, 변수의 누수현상(블록 범위를 지나도 변수가 살아있는)을 방지하기 위해서는 ES6의 키워드를 사용하는 것이 권장된다.
 
 ```javascript
@@ -44,11 +45,12 @@ console.log(hi_2) // "ReferenceError: hi_2 is not defined
 ```
 
 글쓴이는 이제 더 이상 `var`를 사용하지 않는다. 이를 통해 **1.변수의 유효범위를 생각하며** 코드를 작성하게 되었고, `const` 사용을 통해 **2.변수의 오염 가능성을 방지**할 수 있게 됐다. 
-
-
+```javascript
+let hasDuplicate = false;
+const item = document.querySelector('.item')
+```
 
 Javascript는 primitive type을 빼고 모든 값이 Object type이며, 객체 리터럴과 생성자로 생성할 수 있다.  
-- Primitive: `Number`, `String`, `Boolean`, `null`, `undefined`
 - Object:  `Object`, `Function`, `Array`, `Date`, `등...`
 
 airbnb Javascript Style Guide에서는 객체를 생성할 때 객체 리터럴 방식을 채택한다. 
