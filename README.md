@@ -12,6 +12,7 @@
 ## Table of Contents
 
   1. [Variable](#variable)
+  1. [Control Structures](#Control Structures)
   1. [References](#references)
   1. [Objects](#objects)
   1. [Arrays](#arrays)
@@ -73,3 +74,22 @@ const plus = function(a, b){
 
 - `null` : 프로그래머가 저장하는 값
 - `undefined` : 컴퓨터가 던지는 값
+
+
+## Control Structures
+
+글쓴이가 Web 이라는 실행환경 위에서 자바스크립트로 한 가지 성장하게 된 코드는 아래와 같다. if문의 조건 속에 객체요소가 담겨있는지를 검사할 수 있게 되자 자바스크립트 나부랭이 신세를 면하게 되었다.
+
+
+```javascript
+
+let checkElement = false;
+
+if(checkElement){
+  // if 문에서 가장 중요한 것
+  
+}
+
+```
+
+
